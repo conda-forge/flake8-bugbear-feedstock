@@ -5,9 +5,11 @@ Home: https://github.com/PyCQA/flake8-bugbear
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flake8-bugbear-feedstock/blob/master/LICENSE.txt)
 
 Summary: A plugin for Flake8 finding likely bugs and design problems in your program.
+
+Development: https://github.com/PyCQA/flake8-bugbear
 
 A plugin for Flake8 finding likely bugs and design problems in your
 program. Contains warnings that don't belong in pyflakes and pycodestyle.
