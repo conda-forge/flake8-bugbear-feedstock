@@ -1,5 +1,5 @@
 {% set name = "flake8-bugbear" %}
-{% set version = "21.4.1" %}
+{% set version = "21.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dd5395378ffd3661c2c231ff8ec138915c2e94899d7e557716b5071ab69c7214
+  sha256: 2346c81f889955b39e4a368eb7d508de723d9de05716c287dc860a4073dc57e7
 
 build:
   noarch: python
