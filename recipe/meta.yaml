@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8.1
     - flake8 >=6.0
-    - attrs >=19.2.0
+    - attrs >=22.2.0
 
 test:
   commands:
