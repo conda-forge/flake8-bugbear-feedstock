@@ -16,15 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8.1
+    - python {{ python_min }}
     - pip
     - setuptools >=61.2
   run:
-    - python >=3.8.1
+    - python >={{ python_min }}
     - flake8 >=6.0
     - attrs >=22.2.0
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - flake8 --version | grep flake8-bugbear
 
