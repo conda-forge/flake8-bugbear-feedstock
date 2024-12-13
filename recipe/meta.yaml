@@ -1,13 +1,13 @@
 {% set name = "flake8-bugbear" %}
-{% set version = "24.10.31" %}
+{% set version = "24.12.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 435b531c72b27f8eff8d990419697956b9fd25c6463c5ba98b3991591de439db
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 46273cef0a6b6ff48ca2d69e472f41420a42a46e24b2a8972e4f0d6733d12a64
 
 build:
   noarch: python
@@ -16,15 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8.1
+    - python {{ python_min }}
     - pip
     - setuptools >=61.2
   run:
-    - python >=3.8.1
+    - python >={{ python_min }}
     - flake8 >=6.0
     - attrs >=22.2.0
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - flake8 --version | grep flake8-bugbear
 
