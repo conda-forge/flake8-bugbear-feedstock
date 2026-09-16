@@ -1,5 +1,5 @@
 {% set name = "flake8-bugbear" %}
-{% set version = "25.11.29" %}
+{% set version = "26.9.9" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b5d06710f3d26e595541ad303ad4d5cb52578bd4bccbb2c2c0b2c72e243dafc8
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: cdb8237a13af7210889cbdefb455901fabdc852f26df27239aed67993a62a758
 
 build:
   noarch: python
